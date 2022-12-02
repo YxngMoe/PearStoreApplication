@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA0123D5-1209-4DC0-A20A-DAE138A8853F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pear</RootNamespace>
+    <AssemblyName>Pear</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCart.Designer.cs">
+      <DependentUpon>FormCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCartFillFormcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCartFillFormcs.Designer.cs">
+      <DependentUpon>FormCartFillFormcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCases.Designer.cs">
+      <DependentUpon>FormCases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPearMac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPearMac.Designer.cs">
+      <DependentUpon>FormPearMac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPearPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPearPC.Designer.cs">
+      <DependentUpon>FormPearPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPearPods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPearPods.Designer.cs">
+      <DependentUpon>FormPearPods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupport.Designer.cs">
+      <DependentUpon>FormSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWatch.Designer.cs">
+      <DependentUpon>FormWatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCart.resx">
+      <DependentUpon>FormCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCartFillFormcs.resx">
+      <DependentUpon>FormCartFillFormcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCases.resx">
+      <DependentUpon>FormCases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPearMac.resx">
+      <DependentUpon>FormPearMac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPearPC.resx">
+      <DependentUpon>FormPearPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPearPods.resx">
+      <DependentUpon>FormPearPods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupport.resx">
+      <DependentUpon>FormSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWatch.resx">
+      <DependentUpon>FormWatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 180826.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 180705.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 181232.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearSymbol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 183842.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearphone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 180939.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 181026.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 181058.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 181123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 181145.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picwish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 181145.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 181123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peardpads.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-16 180939 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearSNHU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearpad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearmacWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearbookRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearbookBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearbookFront.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearbooktest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearPC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newprice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearpods.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearwatchpre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project-1 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My project-1 %282%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
