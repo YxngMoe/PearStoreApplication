@@ -22,7 +22,7 @@ namespace Pear
             DataGridViewRow row = new DataGridViewRow();
             row.CreateCells(dataGridView1);  
             row.Cells[0].Value = "Cell1";
-            row.Cells[1].Value = "Cell2sf";
+            row.Cells[1].Value = "Cell2s";
             dataGridView1.Rows.Add(row);
         }
 

@@ -63,6 +63,16 @@ namespace Pear.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap My_project {
             get {
                 object obj = ResourceManager.GetObject("My project", resourceCulture);
@@ -253,6 +263,16 @@ namespace Pear.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pearwatchpre1 {
+            get {
+                object obj = ResourceManager.GetObject("pearwatchpre1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap picwish {
             get {
                 object obj = ResourceManager.GetObject("picwish", resourceCulture);
@@ -386,6 +406,16 @@ namespace Pear.Properties {
         internal static System.Drawing.Bitmap Screenshot_2022_11_16_183842 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2022-11-16 183842", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap username {
+            get {
+                object obj = ResourceManager.GetObject("username", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

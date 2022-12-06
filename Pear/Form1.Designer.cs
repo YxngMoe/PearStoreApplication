@@ -29,6 +29,7 @@ namespace Pear
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnExitApplication = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
@@ -37,42 +38,44 @@ namespace Pear
             this.panelAccessoriesSubMenu = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.btnAccessories = new System.Windows.Forms.Button();
             this.PanelProductSubMenu = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.SQL = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelAccessoriesSubMenu.SuspendLayout();
             this.PanelProductSubMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(11)))), ((int)(((byte)(7)))));
+            this.panelSideMenu.Controls.Add(this.button1);
             this.panelSideMenu.Controls.Add(this.btnExitApplication);
             this.panelSideMenu.Controls.Add(this.btnSettings);
             this.panelSideMenu.Controls.Add(this.btnSupport);
@@ -114,7 +117,7 @@ namespace Pear
             this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSettings.Size = new System.Drawing.Size(233, 45);
             this.btnSettings.TabIndex = 7;
-            this.btnSettings.Text = "Settings";
+            this.btnSettings.Text = "User Settings";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
@@ -156,7 +159,6 @@ namespace Pear
             this.panelAccessoriesSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.panelAccessoriesSubMenu.Controls.Add(this.button6);
             this.panelAccessoriesSubMenu.Controls.Add(this.button7);
-            this.panelAccessoriesSubMenu.Controls.Add(this.button8);
             this.panelAccessoriesSubMenu.Controls.Add(this.button9);
             this.panelAccessoriesSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelAccessoriesSubMenu.Location = new System.Drawing.Point(0, 357);
@@ -170,7 +172,7 @@ namespace Pear
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.SystemColors.Menu;
-            this.button6.Location = new System.Drawing.Point(0, 120);
+            this.button6.Location = new System.Drawing.Point(0, 107);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button6.Size = new System.Drawing.Size(233, 40);
@@ -186,31 +188,15 @@ namespace Pear
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.SystemColors.Menu;
-            this.button7.Location = new System.Drawing.Point(0, 80);
+            this.button7.Location = new System.Drawing.Point(0, 53);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(233, 40);
+            this.button7.Size = new System.Drawing.Size(233, 54);
             this.button7.TabIndex = 2;
             this.button7.Text = "PearWatch";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.SystemColors.Menu;
-            this.button8.Location = new System.Drawing.Point(0, 40);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(233, 40);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "PearCases";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -221,7 +207,7 @@ namespace Pear
             this.button9.Location = new System.Drawing.Point(0, 0);
             this.button9.Name = "button9";
             this.button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(233, 40);
+            this.button9.Size = new System.Drawing.Size(233, 53);
             this.button9.TabIndex = 0;
             this.button9.Text = "PearPods";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,6 +242,22 @@ namespace Pear
             this.PanelProductSubMenu.Name = "PanelProductSubMenu";
             this.PanelProductSubMenu.Size = new System.Drawing.Size(233, 167);
             this.PanelProductSubMenu.TabIndex = 1;
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.SystemColors.Menu;
+            this.button5.Location = new System.Drawing.Point(0, 120);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(233, 40);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "iPear";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -323,12 +325,31 @@ namespace Pear
             // 
             // panelLogo
             // 
+            this.panelLogo.Controls.Add(this.textBox1);
             this.panelLogo.Controls.Add(this.pictureBox5);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(233, 100);
             this.panelLogo.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(61, 77);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Pear.Properties.Resources.pearSymbol;
+            this.pictureBox5.Location = new System.Drawing.Point(61, 24);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
             // SQL
             // 
@@ -353,33 +374,6 @@ namespace Pear
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(684, 530);
             this.panelChildForm.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Elephant", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(86, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(391, 83);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Pear Store";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.SystemColors.Menu;
-            this.button5.Location = new System.Drawing.Point(0, 120);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(233, 40);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "iPear";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox1
             // 
@@ -414,6 +408,19 @@ namespace Pear
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.label1.Font = new System.Drawing.Font("Elephant", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(86, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(391, 83);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Pear Store";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -437,26 +444,33 @@ namespace Pear
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox5
+            // button1
             // 
-            this.pictureBox5.Image = global::Pear.Properties.Resources.pearSymbol;
-            this.pictureBox5.Location = new System.Drawing.Point(61, 24);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.button1.Location = new System.Drawing.Point(-3, 1466);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(233, 45);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Log Out";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(934, 561);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.SQL);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "Form1";
@@ -466,6 +480,8 @@ namespace Pear
             this.panelAccessoriesSubMenu.ResumeLayout(false);
             this.PanelProductSubMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -473,7 +489,6 @@ namespace Pear
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -487,7 +502,6 @@ namespace Pear
         private System.Windows.Forms.Panel panelAccessoriesSubMenu;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button btnAccessories;
         private System.Windows.Forms.Panel PanelProductSubMenu;
@@ -507,6 +521,8 @@ namespace Pear
         private System.Windows.Forms.Button btnExitApplication;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

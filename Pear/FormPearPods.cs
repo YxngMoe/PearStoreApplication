@@ -12,9 +12,23 @@ namespace Pear
 {
     public partial class FormPearPods : Form
     {
+        public static FormPearPods instance;
+
         public FormPearPods()
         {
             InitializeComponent();
+            instance = this;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FormLogin frm = new FormLogin();
+
+
+            if (Form1.instance.tb1.Text == "")
+            {
+                frm.Show();
+            }
         }
     }
 }

@@ -68,6 +68,7 @@ namespace Pear
             this.button6.TabIndex = 39;
             this.button6.Text = "Add To Cart $99.99";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox1
             // 
@@ -103,7 +104,7 @@ namespace Pear
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
             this.Name = "FormPearPods";
-            this.Text = "FormPearPods";
+            this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);

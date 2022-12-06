@@ -7,14 +7,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace Pear
 {
+  
     public partial class Form2 : Form
     {
+        MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=");
+        MySqlCommand command;
+        MySqlDataReader mdr;
+
+
+        public static Form2 instance;
+
+
+
         public Form2()
         {
             InitializeComponent();
+            instance = this;
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -35,8 +49,17 @@ namespace Pear
 
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
+            FormLogin frm = new FormLogin();
+
+
+            if (Form1.instance.tb1.Text == "")
+            {
+                frm.Show();
+            }
+
 
         }
 
@@ -68,7 +91,14 @@ namespace Pear
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+            FormLogin frm = new FormLogin();
+
+
+            if (Form1.instance.tb1.Text == "")
+            {
+                frm.Show();
+            }
+
         }
 
         private void button5_MouseHover(object sender, EventArgs e)
@@ -114,6 +144,14 @@ namespace Pear
 
         private void button2_Click(object sender, EventArgs e)
         {
+            FormLogin frm = new FormLogin();
+
+
+            if (Form1.instance.tb1.Text == "")
+            {
+                frm.Show();
+            }
+
 
         }
 
@@ -150,6 +188,17 @@ namespace Pear
         }
 
         private void button6_Click(object sender, EventArgs e)
+        {
+            FormLogin frm = new FormLogin();
+
+
+            if (Form1.instance.tb1.Text == "")
+            {
+                frm.Show();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

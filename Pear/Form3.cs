@@ -22,5 +22,49 @@ namespace Pear
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormLogin frm = new FormLogin();
+
+
+            if (Form1.instance.tb1.Text == "")
+            {
+                frm.Show();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormLogin frm = new FormLogin();
+
+
+            if (Form1.instance.tb1.Text == "")
+            {
+                frm.Show();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FormLogin frm = new FormLogin();
+
+
+            if (Form1.instance.tb1.Text == "")
+            {
+                frm.Show();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FormLogin frm = new FormLogin();
+
+
+            if (Form1.instance.tb1.Text == "")
+            {
+                frm.Show();
+            }
+        }
     }
 }

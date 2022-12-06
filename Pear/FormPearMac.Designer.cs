@@ -55,6 +55,7 @@ namespace Pear
             this.button6.TabIndex = 33;
             this.button6.Text = "Add To Cart $999.99";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button2
             // 
@@ -65,6 +66,7 @@ namespace Pear
             this.button2.TabIndex = 31;
             this.button2.Text = "Add To Cart $999.99";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -75,6 +77,7 @@ namespace Pear
             this.button1.TabIndex = 30;
             this.button1.Text = "Add To Cart $999.99";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 

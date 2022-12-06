@@ -12,9 +12,21 @@ namespace Pear
 {
     public partial class FormWatch : Form
     {
+        
         public FormWatch()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormLogin frm = new FormLogin();
+
+
+            if (Form1.instance.tb1.Text == "")
+            {
+                frm.Show();
+            }
         }
     }
 }

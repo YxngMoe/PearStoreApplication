@@ -7,18 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace Pear
 {
     public partial class Form1 : Form
     {
 
-        
+        public static Form1 instance;
+        public TextBox tb1;
+
+        MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=");
+        MySqlCommand command;
+        MySqlDataReader mdr;
 
         public Form1()
         {
             InitializeComponent();
             customizeDesign();
+            instance = this;
+            tb1 = textBox1;
 
         }
 
@@ -66,7 +75,6 @@ namespace Pear
             openChildForm(new Form2());
             //mycode
 
-            hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -75,7 +83,6 @@ namespace Pear
 
             //mycode
 
-            hideSubMenu();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -83,7 +90,6 @@ namespace Pear
             openChildForm(new FormPearMac());
             //mycode
 
-            hideSubMenu();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -91,7 +97,6 @@ namespace Pear
             openChildForm(new FormPearPC());
             //mycode
 
-            hideSubMenu();
         }
 
         #endregion 
@@ -106,7 +111,6 @@ namespace Pear
             openChildForm(new FormPearPods());
             //mycode
 
-            hideSubMenu();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -114,7 +118,6 @@ namespace Pear
             openChildForm(new FormCases());
             //mycode
 
-            hideSubMenu();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -122,25 +125,33 @@ namespace Pear
             openChildForm(new FormWatch());
             //mycode
 
-            hideSubMenu();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             //mycode
 
-            hideSubMenu();
+
         }
 
         #endregion
 
         private void btnCart_Click(object sender, EventArgs e)
         {
-
             FormCart frmCart = new FormCart();
 
-            frmCart.Show();
-            //mycode
+            
+
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Please log in first!");
+
+            }
+            else
+            {
+                frmCart.Show();
+                //mycode
+            }
 
             hideSubMenu();
         }
@@ -155,8 +166,19 @@ namespace Pear
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3());
-            //mycode
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Please log in first!");
+
+            }
+            else
+            {
+
+                FormLoginSuccess frm = new FormLoginSuccess();
+
+                frm.Show();
+                //mycode
+            }
 
             hideSubMenu();
         }
@@ -195,6 +217,18 @@ namespace Pear
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Form1.instance.tb1.Text = "";
 
         }
     }
