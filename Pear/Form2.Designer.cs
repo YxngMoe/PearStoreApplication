@@ -36,6 +36,10 @@ namespace Pear
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -69,7 +73,7 @@ namespace Pear
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Elephant", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(177, 9);
+            this.label1.Location = new System.Drawing.Point(161, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(406, 83);
             this.label1.TabIndex = 10;
@@ -79,13 +83,15 @@ namespace Pear
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(26, 163);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button1.Size = new System.Drawing.Size(75, 39);
             this.button1.TabIndex = 17;
-            this.button1.Text = "Add To Cart $599.99";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Add To Cart $599.00";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
@@ -93,12 +99,14 @@ namespace Pear
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(204, 163);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 39);
             this.button2.TabIndex = 18;
-            this.button2.Text = "Add To Cart $599.99";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Text = "Add To Cart $599.00";
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
@@ -106,12 +114,14 @@ namespace Pear
             // button5
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button5.Location = new System.Drawing.Point(401, 161);
+            this.button5.BackColor = System.Drawing.Color.Black;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(392, 161);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 41);
             this.button5.TabIndex = 20;
-            this.button5.Text = "Add To Cart $599.99";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Text = "Add To Cart $599.00";
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
             this.button5.MouseHover += new System.EventHandler(this.button5_MouseHover);
@@ -119,18 +129,24 @@ namespace Pear
             // button6
             // 
             this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.Location = new System.Drawing.Point(565, 161);
+            this.button6.BackColor = System.Drawing.Color.Black;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(561, 161);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 41);
             this.button6.TabIndex = 21;
-            this.button6.Text = "Add To Cart $599.99";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Text = "Add To Cart $599.00";
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
             this.button6.MouseHover += new System.EventHandler(this.button6_MouseHover);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.button6);
@@ -144,6 +160,50 @@ namespace Pear
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(668, 214);
             this.panel1.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Imprint MT Shadow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(517, 41);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(157, 15);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Green PearPhone 64gb";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Imprint MT Shadow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(356, 41);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 15);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Black PearPhone 64gb";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Imprint MT Shadow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(188, 41);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 15);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Blue PearPhone 64gb";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(-3, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(162, 15);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Purple PearPhone 64gb";
             // 
             // pictureBox2
             // 
@@ -173,7 +233,7 @@ namespace Pear
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = global::Pear.Properties.Resources.Screenshot_2022_11_16_1811451;
-            this.pictureBox3.Location = new System.Drawing.Point(556, 59);
+            this.pictureBox3.Location = new System.Drawing.Point(549, 59);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 98);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -185,7 +245,7 @@ namespace Pear
             // 
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox4.Image = global::Pear.Properties.Resources.Screenshot_2022_11_16_1811231;
-            this.pictureBox4.Location = new System.Drawing.Point(386, 57);
+            this.pictureBox4.Location = new System.Drawing.Point(371, 57);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(105, 98);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -231,7 +291,9 @@ namespace Pear
             this.Controls.Add(this.button4);
             this.Name = "Form2";
             this.Text = "frmPearPhone";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -258,5 +320,9 @@ namespace Pear
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }

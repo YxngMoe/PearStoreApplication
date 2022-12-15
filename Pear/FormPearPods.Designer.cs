@@ -58,22 +58,27 @@ namespace Pear
             this.button4.TabIndex = 35;
             this.button4.Text = "Home";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button6
             // 
             this.button6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button6.Location = new System.Drawing.Point(695, 231);
+            this.button6.BackColor = System.Drawing.Color.Black;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(671, 231);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 37);
+            this.button6.Size = new System.Drawing.Size(99, 37);
             this.button6.TabIndex = 39;
-            this.button6.Text = "Add To Cart $99.99";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Text = "Add To Cart $250.00";
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
+            this.button6.MouseHover += new System.EventHandler(this.button6_MouseHover);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::Pear.Properties.Resources.pearpods;
             this.pictureBox1.Location = new System.Drawing.Point(256, 82);
             this.pictureBox1.Name = "pictureBox1";

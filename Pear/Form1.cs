@@ -14,13 +14,20 @@ namespace Pear
 {
     public partial class Form1 : Form
     {
+        //ihab elryah 
 
         public static Form1 instance;
+
         public TextBox tb1;
+
+        public Button btn1;
 
         MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=");
         MySqlCommand command;
         MySqlDataReader mdr;
+
+
+        public Panel pb1;
 
         public Form1()
         {
@@ -28,6 +35,11 @@ namespace Pear
             customizeDesign();
             instance = this;
             tb1 = textBox1;
+            pb1 = panelChildForm;
+            btn1 = btnExitApplication;
+
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
 
         }
 
@@ -44,7 +56,7 @@ namespace Pear
 
         private void hideSubMenu()
         {
-            if(panelAccessoriesSubMenu.Visible == true)
+            if (panelAccessoriesSubMenu.Visible == true)
                 panelAccessoriesSubMenu.Visible = false;
             if (PanelProductSubMenu.Visible == true)
                 PanelProductSubMenu.Visible = false;
@@ -70,11 +82,12 @@ namespace Pear
 
         }
         #region productsSubMenu
+
         private void button2_Click(object sender, EventArgs e)
         {
+
             openChildForm(new Form2());
             //mycode
-
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -140,7 +153,7 @@ namespace Pear
         {
             FormCart frmCart = new FormCart();
 
-            
+
 
             if (textBox1.Text == "")
             {
@@ -149,6 +162,22 @@ namespace Pear
             }
             else
             {
+
+                /*string MyConnection2s = "datasource=localhost;port=3306;username=root;password=";
+
+                string Querys = "USE pearstoreProject; UPDATE cart SET cartQuanity = '"+FormCart.instance.cartquanity+"' WHERE userid = (SELECT userid FROM userinfo WHERE username = '"+Form1.instance.textBox1.Text+"');";
+                MySqlConnection MyConn2s = new MySqlConnection(MyConnection2s);
+
+                MySqlCommand MyCommand2s = new MySqlCommand(Querys, MyConn2s);
+                MySqlDataReader MyReader2s;
+                MyConn2s.Open();
+                MyReader2s = MyCommand2s.ExecuteReader();
+                while (MyReader2s.Read())
+                {
+                }
+                MyConn2s.Close();*/
+
+
                 frmCart.Show();
                 //mycode
             }
@@ -164,11 +193,15 @@ namespace Pear
             hideSubMenu();
         }
 
+
+
         private void btnSettings_Click(object sender, EventArgs e)
         {
+
             if (textBox1.Text == "")
             {
                 MessageBox.Show("Please log in first!");
+
 
             }
             else
@@ -197,7 +230,7 @@ namespace Pear
             childForm.BringToFront();
             childForm.Show();
 
-            
+
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -212,7 +245,89 @@ namespace Pear
 
         private void btnExitApplication_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            if (Form1.instance.tb1.Text == "")
+            {
+                FormLogin frm = new FormLogin();
+
+                frm.Show();
+                if(Form1.instance.tb1.Text != "")
+                {
+                    btnExitApplication.Text = "Log Out";
+
+                }
+
+            }
+            else
+            {
+                if (btnExitApplication.Text == "Log Out")
+                {
+                    MessageBox.Show(this, "Logging out will clear cart!", "Logging Out", MessageBoxButtons.OKCancel);
+
+                    //start of the mysql for cartquanity count
+                    string MyConnection5 = "datasource=localhost;port=3306;username=root;password=";
+
+                    string Querys = "USE pearstoreProject; UPDATE cart SET cartquanity = 0;";
+                    MySqlConnection MyConn2s = new MySqlConnection(MyConnection5);
+
+                    MySqlCommand MyCommand2s = new MySqlCommand(Querys, MyConn2s);
+                    MySqlDataReader MyReader2s;
+                    MyConn2s.Open();
+                    MyReader2s = MyCommand2s.ExecuteReader();
+                    while (MyReader2s.Read())
+                    {
+                    }
+                    MyConn2s.Close();
+                    //end of the mysql for cartquanity count
+
+
+                    //start of connection for total count
+                    string MyConnection3s = "datasource=localhost;port=3306;username=root;password=";
+
+                    string Queryss = "USE pearstoreProject; UPDATE cart SET total = 0;";
+                    MySqlConnection MyConn2ss = new MySqlConnection(MyConnection3s);
+
+                    MySqlCommand MyCommand2ss = new MySqlCommand(Queryss, MyConn2ss);
+                    MySqlDataReader MyReader3;
+                    MyConn2ss.Open();
+                    MyReader3 = MyCommand2ss.ExecuteReader();
+                    while (MyReader3.Read())
+                    {
+                    }
+                    MyConn2ss.Close();
+                    //end of connection for total count
+
+                    //start of connection for product added to orders table
+                    string MyConnection5s = "datasource=localhost;port=3306;username=root;password=";
+
+                    string Query5 = "USE pearstoreproject; SET foreign_key_checks = 0; DELETE FROM orders WHERE cartid = (SELECT cartid FROM cart WHERE userid = (Select userid From userinfo where username ='" + Form1.instance.tb1.Text + "')); SET foreign_key_checks = 1;";
+                    MySqlConnection MyConn5 = new MySqlConnection(MyConnection5s);
+
+                    MySqlCommand MyCommand5 = new MySqlCommand(Query5, MyConn5);
+                    MySqlDataReader MyReader5;
+                    MyConn5.Open();
+                    MyReader5 = MyCommand5.ExecuteReader();
+                    while (MyReader5.Read())
+                    {
+
+                    }
+                    MyConn5.Close();
+
+                    //end of connection for product added to orders table
+
+
+                }
+                Form1.instance.tb1.Text = "";
+
+                btnExitApplication.Text = "Log in";
+
+
+            }
+
+
+            
+
+            
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -225,11 +340,24 @@ namespace Pear
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+            private void button8_Click_1(object sender, EventArgs e)
+            {
+
+                openChildForm(new FormAllProducts());
+
+            }
+
+            private void button10_Click(object sender, EventArgs e)
+            {
+                this.Close();
+            }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
         {
 
-            Form1.instance.tb1.Text = "";
-
         }
+
+        //ihab elrayah
     }
-}
+    }
+

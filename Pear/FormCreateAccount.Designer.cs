@@ -155,6 +155,7 @@ namespace Pear
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(100, 20);
             this.txtpassword.TabIndex = 14;
+            this.txtpassword.UseSystemPasswordChar = true;
             // 
             // txtconpass
             // 
@@ -162,6 +163,7 @@ namespace Pear
             this.txtconpass.Name = "txtconpass";
             this.txtconpass.Size = new System.Drawing.Size(100, 20);
             this.txtconpass.TabIndex = 15;
+            this.txtconpass.UseSystemPasswordChar = true;
             // 
             // btnReturnLogin
             // 
@@ -226,6 +228,7 @@ namespace Pear
             this.Controls.Add(this.labelLastName);
             this.Controls.Add(this.labelfirstname);
             this.Name = "FormCreateAccount";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCreateAccount";
             this.Load += new System.EventHandler(this.FormCreateAccount_Load);
             this.ResumeLayout(false);

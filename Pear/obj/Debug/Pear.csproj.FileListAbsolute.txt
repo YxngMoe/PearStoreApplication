@@ -44,3 +44,4 @@ C:\Users\csmoh\Source\Repos\Pear\Pear\bin\Debug\System.Runtime.CompilerServices.
 C:\Users\csmoh\Source\Repos\Pear\Pear\obj\Debug\Pear.FormCreateAccount.resources
 C:\Users\csmoh\Source\Repos\Pear\Pear\obj\Debug\Pear.FormLoginSuccess.resources
 C:\Users\csmoh\Source\Repos\Pear\Pear\obj\Debug\Pear.csproj.CopyComplete
+C:\Users\csmoh\Source\Repos\Pear\Pear\obj\Debug\Pear.FormAllProducts.resources

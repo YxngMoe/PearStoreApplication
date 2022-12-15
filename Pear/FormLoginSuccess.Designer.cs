@@ -132,11 +132,11 @@ namespace Pear
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(203, 190);
+            this.label10.Location = new System.Drawing.Point(179, 190);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 13);
+            this.label10.Size = new System.Drawing.Size(90, 13);
             this.label10.TabIndex = 11;
-            this.label10.Text = "Gender";
+            this.label10.Text = "SNHU Student";
             // 
             // label11
             // 

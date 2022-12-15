@@ -15,9 +15,13 @@ namespace Pear
     {
         MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=");
 
+        public static FormCreateAccount instance;
+
+        public ComboBox combox;
         public FormCreateAccount()
         {
             InitializeComponent();
+            combox = comboBoxGender;
         }
 
         private void FormCreateAccount_Load(object sender, EventArgs e)
@@ -69,7 +73,7 @@ namespace Pear
                 if (!(userExists || mailExists))
                 {
 
-                    string iquery = "INSERT INTO pearstoreproject.userinfo(`ID`,`FirstName`,`LastName`,`Gender`,`Birthday`,`Email`,`Username`, `Password`) VALUES (NULL, '" + txtfirst.Text + "', '" + txtlast.Text + "', '" + comboBoxGender.Text + "', '" + dateTimePicker1.Value.Date + "', '" + txtEmail.Text + "', '" + txtUser.Text + "', '" + txtpassword.Text + "')";
+                    string iquery = "INSERT INTO pearstoreproject.userinfo(`userID`,`FirstName`,`LastName`,`Gender`,`Birthday`,`Email`,`Username`, `Password`) VALUES (NULL, '" + txtfirst.Text + "', '" + txtlast.Text + "', '" + comboBoxGender.Text + "', '" + dateTimePicker1.Value.Date + "', '" + txtEmail.Text + "', '" + txtUser.Text + "', '" + txtpassword.Text + "')";
                     MySqlCommand commandDatabase = new MySqlCommand(iquery, connection);
                     commandDatabase.CommandTimeout = 60;
 
@@ -83,19 +87,45 @@ namespace Pear
                         MessageBox.Show(ex.Message);
                     }
 
+
+
+          
                     MessageBox.Show("Account Successfully Created!");
+                    
+                    
+
+                    //'" + FormCart.instance.cartquanity + "' incase i need to make this instance again its here
+
+                    string MyConnection2s = "datasource=localhost;port=3306;username=root;password=";
+
+                    string Querys = "USE pearstoreProject; INSERT INTO cart(`cartid`, `userid`, `total`, `cartquanity`) VALUES (NULL, (SELECT userid FROM userinfo WHERE Username = '" + txtUser.Text + "'), 0, 0);";
+                    MySqlConnection MyConn2s = new MySqlConnection(MyConnection2s);
+
+                    MySqlCommand MyCommand2s = new MySqlCommand(Querys, MyConn2s);
+                    MySqlDataReader MyReader2s;
+                    MyConn2s.Open();
+                    MyReader2s = MyCommand2s.ExecuteReader();
+                    while (MyReader2s.Read())
+                    {
+                    }
+                    MyConn2s.Close();
 
                 }
-
                 connection.Close();
+
+
             }
         }
 
         private void btnReturnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
+
             FormLogin frm4 = new FormLogin();
             frm4.ShowDialog();
+
+            this.Close();
+
         }
 
         private void comboBoxGender_SelectedIndexChanged(object sender, EventArgs e)

@@ -103,6 +103,12 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAllProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAllProducts.Designer.cs">
+      <DependentUpon>FormAllProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAllProducts.resx">
+      <DependentUpon>FormAllProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCart.resx">
       <DependentUpon>FormCart.cs</DependentUpon>
@@ -344,6 +353,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20221207_120903.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20221207_081349.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20221207_081459.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20221207_082246.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20221207_082414.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20221116_060824.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20221116_061230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20221116_014247.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applewatchmultiple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pearpodsinfo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Offical pearpods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Offical pearpods.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

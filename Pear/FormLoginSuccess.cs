@@ -37,6 +37,7 @@ namespace Pear
         {
 
 
+
             Form1.instance.tb1.Text = "";
 
             this.Close();

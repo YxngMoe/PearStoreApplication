@@ -63,6 +63,16 @@ namespace Pear.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap applewatchmultiple {
+            get {
+                object obj = ResourceManager.GetObject("applewatchmultiple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
@@ -116,6 +126,26 @@ namespace Pear.Properties {
         internal static System.Drawing.Bitmap newprice {
             get {
                 object obj = ResourceManager.GetObject("newprice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Offical_pearpods {
+            get {
+                object obj = ResourceManager.GetObject("Offical pearpods", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Offical_pearpods1 {
+            get {
+                object obj = ResourceManager.GetObject("Offical pearpods1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +256,16 @@ namespace Pear.Properties {
         internal static System.Drawing.Bitmap pearpods {
             get {
                 object obj = ResourceManager.GetObject("pearpods", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pearpodsinfo {
+            get {
+                object obj = ResourceManager.GetObject("pearpodsinfo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +446,86 @@ namespace Pear.Properties {
         internal static System.Drawing.Bitmap Screenshot_2022_11_16_183842 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2022-11-16 183842", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_20221116_014247 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_20221116_014247", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_20221116_060824 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_20221116_060824", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_20221116_061230 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_20221116_061230", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_20221207_081349 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_20221207_081349", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_20221207_081459 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_20221207_081459", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_20221207_082246 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_20221207_082246", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_20221207_082414 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_20221207_082414", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_20221207_120903 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_20221207_120903", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

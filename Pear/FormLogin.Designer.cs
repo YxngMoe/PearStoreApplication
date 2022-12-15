@@ -42,6 +42,7 @@ namespace Pear
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -78,7 +79,7 @@ namespace Pear
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(188, 329);
+            this.btnLogin.Location = new System.Drawing.Point(347, 269);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(76, 24);
@@ -89,7 +90,7 @@ namespace Pear
             // 
             // btnCreateAccount
             // 
-            this.btnCreateAccount.Location = new System.Drawing.Point(504, 329);
+            this.btnCreateAccount.Location = new System.Drawing.Point(304, 347);
             this.btnCreateAccount.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnCreateAccount.Name = "btnCreateAccount";
             this.btnCreateAccount.Size = new System.Drawing.Size(172, 24);
@@ -111,13 +112,13 @@ namespace Pear
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Elephant", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(280, 4);
+            this.label3.Font = new System.Drawing.Font("Elephant", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(147, 20);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(227, 83);
+            this.label3.Size = new System.Drawing.Size(383, 62);
             this.label3.TabIndex = 24;
-            this.label3.Text = "Login";
+            this.label3.Text = "Login to iPear";
             // 
             // button4
             // 
@@ -186,12 +187,23 @@ namespace Pear
             this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 28;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(322, 319);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 24);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Forgot Password";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 451);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -233,5 +245,6 @@ namespace Pear
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }
